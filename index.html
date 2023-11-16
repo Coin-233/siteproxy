@@ -744,7 +744,7 @@ input::-webkit-input-placeholder {
             <section class="sousuo">
             <div class="search">
                 <div class="search-box">
-                    <button class="search-engine-name" id="search-engine-name">Google搜索</button>
+                    <button class="search-engine-name" id="search-engine-name">DuckDuckGo搜索</button>
                     <input type="text" id="txt" class="search-input" placeholder="选择引擎，输入关键字，回车/Enter搜索"/>
                     <button class="search-btn" id="search-btn">搜索</button>
                 </div>
@@ -773,7 +773,7 @@ input::-webkit-input-placeholder {
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-4 col-xs-6">
-                            <a href="/https/www.youtube.com/channel/UCAq_xQV8pJ2Q_KOszzaYPBg/feed?disable_polymer=1" class="card-link" target="_blank">
+                            <a href="/https/www.youtube.com" class="card-link" target="_blank">
                             <div class="card-tit">YouTube</div>
                             </a>
                         </div>
@@ -785,16 +785,6 @@ input::-webkit-input-placeholder {
                         <div class="col-md-3 col-sm-4 col-xs-6">
                             <a href="/https/web.telegram.org" class="card-link" target="_blank">
                             <div class="card-tit">Telegram登录</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <a href="/https/telegram.org/dl/android/apk" class="card-link" target="_blank">
-                            <div class="card-tit">Telegram下载</div>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <a href="/https/t.me/s/socks5list" class="card-link" target="_blank">
-                            <div class="card-tit">Telegram代理</div>
                             </a>
                         </div>
                     </div>
@@ -906,7 +896,7 @@ input::-webkit-input-placeholder {
                 <div class="rwo">
                     <div class="col-md-12">
                         <p>
-                            本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：me@sakuras.in
+                            本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：me#sakuras.in
                         </p>
                         <!--代码源自小呆导航的开源代码，遵循MIT协议，此处保留源代码的声明-->
                         <p>
@@ -965,7 +955,7 @@ function browserRedirect() {
   });
 
 // 默认搜索引擎的内容，如果界面修改了需要同步修改
-var thisSearch = '/https/www.google.com/search?q=';
+var thisSearch = '/https/duckduckgo.com/?q=';
 
 $('#txt').keydown(function(ev){
     // 回车键的处理
@@ -980,8 +970,8 @@ $(function(){
   var search = {
     data: [
     {
-      name: 'Google搜索',
-      url: '/https/www.google.com/search?q='
+      name: 'DuckDuckGo搜索',
+      url: '/https/duckduckgo.com/?q='
     }, {
       name: 'Bing搜索',
       url: '/https/bing.com/search?q='
@@ -990,7 +980,7 @@ $(function(){
       url: '/https/www.yahoo.com/search?q='
     }, {
       name: 'GitHub搜索',
-      url: 'https://github.com/search?q='
+      url: '/https/github.com/search?q='
     }]
   }
   for(var i = 0; i < search.data.length; i++){
